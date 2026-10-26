@@ -31,6 +31,32 @@ The Voting smart contract stores two candidate vote counts and tracks whether an
 [View Contract on Sepolia Etherscan](https://sepolia.etherscan.io/address/0xAA7e18d425d918a35F365c2F52155683bBf93B79)
 
 ## Run Locally
+## Deploy the Smart Contract
+
+The Voting smart contract is deployed on the Ethereum Sepolia test network.
+
+### Using Remix IDE
+
+1. Open [Remix IDE](https://remix.ethereum.org/).
+2. Create a Solidity file named `Voting.sol`.
+3. Paste the VoteChain Solidity smart contract into the file.
+4. Open the **Solidity Compiler** tab and select a compatible compiler version (`0.8.20` or compatible).
+5. Click **Compile Voting.sol**.
+6. Open **Deploy & Run Transactions**.
+7. In the Environment dropdown, select **Injected Provider - MetaMask**.
+8. Connect MetaMask and select the **Sepolia test network**.
+9. Select the `Voting` contract and click **Deploy**.
+10. Confirm the deployment transaction in MetaMask.
+11. Wait for the transaction to be confirmed and copy the deployed contract address.
+12. Configure the frontend to use that contract address and the correct ABI.
+
+**Network:** Ethereum Sepolia Testnet
+
+**Deployed Contract Address:** `0xAA7e18d425d918a35F365c2F52155683bBf93B79`
+
+**Explorer:** https://sepolia.etherscan.io/address/0xAA7e18d425d918a35F365c2F52155683bBf93B79
+
+*Note: Sepolia is a test network. Use test ETH, not real funds.*
 
 ### Prerequisites
 
