@@ -105,6 +105,16 @@ The Voting smart contract is deployed on the Ethereum Sepolia test network.
 ## Limitations
 
 This is an educational project designed to demonstrate blockchain development and smart contract interaction. It is not suitable for real elections. One vote per wallet does not guarantee one vote per person, and the application does not implement voter identity verification or election-grade privacy.
+## Application Screenshots
+
+### VoteChain User Interface
+
+![VoteChain Screenshot 1](screenshorts/ss1.png)
+
+### Voting Interface and Results
+
+![VoteChain Screenshot 2](screenshorts/ss2.png)
+
 
 ## Author
 
