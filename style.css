@@ -1,0 +1,218 @@
+
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #f4f5ff;
+  background: #0b1020;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top, #202b59 0%, transparent 48%),
+    #0b1020;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 7%;
+  border-bottom: 1px solid #ffffff16;
+}
+
+.logo {
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.connect-btn,
+.vote-btn {
+  color: white;
+  background: linear-gradient(120deg, #6558f5, #3188f5);
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 700;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.container {
+  width: min(1000px, 90%);
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 10px 45px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #a9c8ff;
+  background: #ffffff0b;
+  border: 1px solid #ffffff20;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin: 22px 0;
+}
+
+h1 span {
+  color: #8e9cff;
+}
+
+.hero > p {
+  color: #b6bfd8;
+}
+
+.status {
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+#message {
+  min-height: 24px;
+  color: #a9c8ff;
+  overflow-wrap: anywhere;
+}
+
+.vote-section {
+  padding: 32px 0 60px;
+  text-align: center;
+}
+
+.vote-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #aab4ce;
+  margin-bottom: 28px;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.candidate-card {
+  padding: 32px 20px;
+  background: #ffffff09;
+  border: 1px solid #ffffff1c;
+  border-radius: 22px;
+  box-shadow: 0 16px 50px #00000020;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 18px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #6558f5, #3d9cff);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.avatar-b {
+  background: linear-gradient(135deg, #d65bea, #7257f5);
+}
+
+.candidate-card h3 {
+  font-size: 1.35rem;
+}
+
+.vote-count {
+  color: #b8c2df;
+  margin: 20px 0;
+}
+
+.vote-count span {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.vote-btn {
+  width: 100%;
+}
+
+.refresh-btn {
+  margin-top: 24px;
+  padding: 11px 18px;
+  color: #dce5ff;
+  background: transparent;
+  border: 1px solid #ffffff30;
+  border-radius: 10px;
+}
+
+.note {
+  color: #929db9;
+  font-size: 0.8rem;
+  margin-top: 25px;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: #8994b0;
+  border-top: 1px solid #ffffff16;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 18px 5%;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .connect-btn {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding-top: 55px;
+  }
+
+  .candidate-grid {
+    grid-template-columns: 1fr;
+  }
+}

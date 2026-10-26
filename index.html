@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoteChain | Blockchain Voting</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">🗳️ VoteChain</a>
+    <button id="connectBtn" class="connect-btn">Connect MetaMask</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="tag">POWERED BY ETHEREUM SEPOLIA</span>
+      <h1>Your Vote.<br /><span>Your Blockchain.</span></h1>
+      <p>Cast your vote transparently using a smart contract.</p>
+      <p id="walletStatus" class="status">Wallet not connected</p>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section class="vote-section">
+      <h2>Choose your candidate</h2>
+      <p class="subtitle">Each wallet address can vote only once.</p>
+
+      <div class="candidate-grid">
+        <article class="candidate-card">
+          <div class="avatar">A</div>
+          <h3>Candidate A</h3>
+          <p class="vote-count"><span id="countA">—</span> votes</p>
+          <button class="vote-btn" data-candidate="0">Vote for A</button>
+        </article>
+
+        <article class="candidate-card">
+          <div class="avatar avatar-b">B</div>
+          <h3>Candidate B</h3>
+          <p class="vote-count"><span id="countB">—</span> votes</p>
+          <button class="vote-btn" data-candidate="1">Vote for B</button>
+        </article>
+      </div>
+
+      <button id="refreshBtn" class="refresh-btn">Refresh vote counts</button>
+      <p class="note">Demo project for educational use only. Not for real elections.</p>
+    </section>
+  </main>
+
+  <footer>VoteChain · Decentralized voting demonstration</footer>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
